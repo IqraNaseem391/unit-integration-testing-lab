@@ -1,4 +1,3 @@
-from bank_app import deposit, withdraw
 def deposit(balance, amount):
     if amount <= 0:
         raise ValueError("Deposit amount must be positive")
@@ -18,7 +17,10 @@ def calculate_interest(balance, rate, years):
         raise ValueError("Balance cannot be negative")
     if rate < 0:
         raise ValueError("Rate cannot be negative")
-    return balance * (1 + rate / 100) ** years
+    if years < 0:
+        raise ValueError("Years cannot be negative")
+
+    return round(balance * (1 + rate / 100) ** years, 2)
 
 
 def check_loan_eligibility(balance, credit_score):

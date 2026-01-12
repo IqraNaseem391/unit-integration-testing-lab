@@ -1,6 +1,10 @@
 import pytest
-from bank_app import deposit, withdraw, calculate_interest, check_loan_eligibility
-
+from bank_app import (
+    deposit,
+    withdraw,
+    calculate_interest,
+    check_loan_eligibility
+)
 def test_deposit_valid():
     assert deposit(1000, 500) == 1500
 
