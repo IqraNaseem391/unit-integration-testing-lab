@@ -1,3 +1,4 @@
+from bank_app import deposit, withdraw
 def deposit(balance, amount):
     if amount <= 0:
         raise ValueError("Deposit amount must be positive")
