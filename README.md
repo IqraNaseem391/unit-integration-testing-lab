@@ -2,8 +2,7 @@
 # unit-integration-testing-lab
 Unit and Integration Testing Lab using PyTest
 =======
-# unit-integration-testing-lab1
-Unit and Integration Testing Lab using PyTest
+
 ## Student Information
 Name: Iqra Naseem  
 Roll No: 231400110  
